@@ -1,0 +1,482 @@
+{
+  "Basic Information": [
+    {
+      "Feature": "模具穴数",
+      "Indicator": "实际（单重）",
+      "Value": 0.82,
+      "Type": "正相关",
+      "Level": "高"
+    },
+    {
+      "Feature": "模具穴数",
+      "Indicator": "A-3",
+      "Value": 0.64,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "模具材质",
+      "Indicator": "A-1",
+      "Value": 0.65,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "模具材质",
+      "Indicator": "C边",
+      "Value": -0.48,
+      "Type": "负相关",
+      "Level": "低"
+    },
+    {
+      "Feature": "原材料密度",
+      "Indicator": "A边",
+      "Value": -0.78,
+      "Type": "负相关",
+      "Level": "高"
+    },
+    {
+      "Feature": "原材料密度",
+      "Indicator": "D边",
+      "Value": -0.72,
+      "Type": "负相关",
+      "Level": "高"
+    },
+    {
+      "Feature": "原材料密度",
+      "Indicator": "收缩率",
+      "Value": 0.55,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "冷却时间",
+      "Indicator": "差异（实际）",
+      "Value": -0.45,
+      "Type": "负相关",
+      "Level": "低"
+    },
+    {
+      "Feature": "冷却时间",
+      "Indicator": "实际（料头）",
+      "Value": -0.57,
+      "Type": "负相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "机台压力能力",
+      "Indicator": "B-2",
+      "Value": 0.55,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "模具冷却孔径",
+      "Indicator": "收缩率",
+      "Value": -0.68,
+      "Type": "负相关",
+      "Level": "高"
+    },
+    {
+      "Feature": "模具冷却孔径",
+      "Indicator": "A-5",
+      "Value": 0.48,
+      "Type": "正相关",
+      "Level": "低"
+    },
+    {
+      "Feature": "模具大小",
+      "Indicator": "A-1",
+      "Value": 0.65,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "模具大小",
+      "Indicator": "A-2",
+      "Value": 0.64,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "模具大小",
+      "Indicator": "A-3",
+      "Value": 0.64,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "模具大小",
+      "Indicator": "A-4",
+      "Value": 0.64,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "模具大小",
+      "Indicator": "A-5",
+      "Value": 0.64,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "模具大小",
+      "Indicator": "B-1",
+      "Value": 0.64,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "模具大小",
+      "Indicator": "B-2",
+      "Value": 0.64,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "模具大小",
+      "Indicator": "B-3",
+      "Value": 0.64,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "模具大小",
+      "Indicator": "B-4",
+      "Value": 0.64,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "模具大小",
+      "Indicator": "B-5",
+      "Value": 0.64,
+      "Type": "正相关",
+      "Level": "中"
+    }
+  ],
+  "Adjustable Parameters": [
+    {
+      "Feature": "注射压力一段",
+      "Indicator": "实际（单重）",
+      "Value": 0.90,
+      "Type": "正相关",
+      "Level": "高"
+    },
+    {
+      "Feature": "注射压力一段",
+      "Indicator": "A-2",
+      "Value": 0.75,
+      "Type": "正相关",
+      "Level": "高"
+    },
+    {
+      "Feature": "注射压力一段",
+      "Indicator": "差异（实际）",
+      "Value": 0.68,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "注射压力一段",
+      "Indicator": "收缩率",
+      "Value": -0.72,
+      "Type": "负相关",
+      "Level": "高"
+    },
+    {
+      "Feature": "注射压力一段",
+      "Indicator": "D边",
+      "Value": -0.58,
+      "Type": "负相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "注射压力二段",
+      "Indicator": "B-3",
+      "Value": 0.62,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "注射压力二段",
+      "Indicator": "实际（料头）",
+      "Value": 0.57,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "注射压力二段",
+      "Indicator": "A边",
+      "Value": -0.45,
+      "Type": "负相关",
+      "Level": "低"
+    },
+    {
+      "Feature": "注射压力二段",
+      "Indicator": "A-4",
+      "Value": 0.65,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "注射速度一段",
+      "Indicator": "差异（实际）",
+      "Value": 0.88,
+      "Type": "正相关",
+      "Level": "高"
+    },
+    {
+      "Feature": "注射速度一段",
+      "Indicator": "A-3",
+      "Value": 0.75,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "注射速度一段",
+      "Indicator": "收缩率",
+      "Value": -0.65,
+      "Type": "负相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "注射速度一段",
+      "Indicator": "C边",
+      "Value": -0.62,
+      "Type": "负相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "注射速度一段",
+      "Indicator": "A-1",
+      "Value": 0.78,
+      "Type": "正相关",
+      "Level": "高"
+    },
+    {
+      "Feature": "注射速度二段",
+      "Indicator": "实际（料头）",
+      "Value": 0.68,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "注射速度二段",
+      "Indicator": "G边",
+      "Value": -0.48,
+      "Type": "负相关",
+      "Level": "低"
+    },
+    {
+      "Feature": "注射温度一段",
+      "Indicator": "C-1",
+      "Value": 0.72,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "注射温度一段",
+      "Indicator": "变形 F边",
+      "Value": -0.68,
+      "Type": "负相关",
+      "Level": "高"
+    },
+    {
+      "Feature": "注射温度一段",
+      "Indicator": "D边",
+      "Value": -0.55,
+      "Type": "负相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "注射温度二段",
+      "Indicator": "B-2",
+      "Value": 0.75,
+      "Type": "正相关",
+      "Level": "高"
+    },
+    {
+      "Feature": "注射温度二段",
+      "Indicator": "实际（单重）",
+      "Value": 0.62,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "注射温度二段",
+      "Indicator": "A-5",
+      "Value": 0.58,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "注射温度二段",
+      "Indicator": "B-5",
+      "Value": -0.42,
+      "Type": "负相关",
+      "Level": "低"
+    },
+    {
+      "Feature": "保压压力一段",
+      "Indicator": "实际（单重）",
+      "Value": 0.85,
+      "Type": "正相关",
+      "Level": "高"
+    },
+    {
+      "Feature": "保压压力一段",
+      "Indicator": "A-2",
+      "Value": 0.70,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "保压压力一段",
+      "Indicator": "差异（实际）",
+      "Value": 0.65,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "保压压力一段",
+      "Indicator": "收缩率",
+      "Value": -0.70,
+      "Type": "负相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "保压压力一段",
+      "Indicator": "D边",
+      "Value": -0.55,
+      "Type": "负相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "保压压力二段",
+      "Indicator": "B-3",
+      "Value": 0.60,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "保压压力二段",
+      "Indicator": "实际（料头）",
+      "Value": 0.55,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "保压压力二段",
+      "Indicator": "A边",
+      "Value": -0.40,
+      "Type": "负相关",
+      "Level": "低"
+    },
+    {
+      "Feature": "保压压力二段",
+      "Indicator": "A-4",
+      "Value": 0.60,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "保压速度一段",
+      "Indicator": "差异（实际）",
+      "Value": 0.85,
+      "Type": "正相关",
+      "Level": "高"
+    },
+    {
+      "Feature": "保压速度一段",
+      "Indicator": "A-3",
+      "Value": 0.70,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "保压速度一段",
+      "Indicator": "收缩率",
+      "Value": -0.60,
+      "Type": "负相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "保压速度一段",
+      "Indicator": "C边",
+      "Value": -0.58,
+      "Type": "负相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "保压速度一段",
+      "Indicator": "A-1",
+      "Value": 0.75,
+      "Type": "正相关",
+      "Level": "高"
+    },
+    {
+      "Feature": "保压速度二段",
+      "Indicator": "实际（料头）",
+      "Value": 0.65,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "保压速度二段",
+      "Indicator": "G边",
+      "Value": -0.45,
+      "Type": "负相关",
+      "Level": "低"
+    },
+    {
+      "Feature": "喷嘴温度",
+      "Indicator": "C-1",
+      "Value": 0.70,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "喷嘴温度",
+      "Indicator": "变形 F边",
+      "Value": -0.65,
+      "Type": "负相关",
+      "Level": "高"
+    },
+    {
+      "Feature": "喷嘴温度",
+      "Indicator": "D边",
+      "Value": -0.50,
+      "Type": "负相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "模温控制器温度",
+      "Indicator": "B-2",
+      "Value": 0.70,
+      "Type": "正相关",
+      "Level": "高"
+    },
+    {
+      "Feature": "模温控制器温度",
+      "Indicator": "实际（单重）",
+      "Value": 0.60,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "模温控制器温度",
+      "Indicator": "A-5",
+      "Value": 0.55,
+      "Type": "正相关",
+      "Level": "中"
+    },
+    {
+      "Feature": "模温控制器温度",
+      "Indicator": "B-5",
+      "Value": -0.40,
+      "Type": "负相关",
+      "Level": "低"
+    }
+  ]
+}

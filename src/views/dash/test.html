@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <template>
+    <div v-loading="loading" element-loading-text="拼命运算中">
+      <el-container>
+        <el-col :span="3"></el-col>
+        <div class="grid-content bg-purple">
+          <div class="left_tree">
+            <!-- <el-tabs id="modelRadiosList" v-model="model" tab-position="left"> -->
+            <div style="margin-left: 10%">
+              <!-- tab-pane的name值必须与vuex里的算法名字一一对应 -->
+              <!-- <el-alert> 这里你可以选择多个算法同时训练 </el-alert> -->
+
+              <el-row :gutter="20" v-for="(item, index) in sorted_models_forms" :key="index">
+                <el-switch style="margin-top: 10%" v-model="item.isSelect"
+                  @change="handleCheckAlg($event, item.modelname)" :active-text="item.modelname" inactive-text="">
+                </el-switch>
+              </el-row>
+            </div>
+          </div>
+        </div>
+        </el-col>
+
+        <el-col :span="18">
+          <div class="grid-content bg-purple">
+            <!-- 横的tabs标签 -->
+            <el-tabs v-model="editableTabsValue" type="card" @edit="handleTabsEdit">
+              <el-tab-pane v-for="(item, index) in filteredEditableTabs" :key="index" :label="item.modelname"
+                :name="item.modelname">
+                <!-- <div v-if="item.name === 'dqn'"> -->
+                <div class="titleBox">{{ hashMap[item.modelname] }}</div>
+                <div class="introBox">
+                  <p>模型说明：</p>
+                  <p>{{ item.introduction }}</p>
+                  <p></p>
+                </div>
+
+                <!-- 模型参数表单 -->
+                <div>
+                  <div class="paramBox" v-if="editableTabsValue === item.modelname">
+                    <!-- <el-form label-position="top" :model="paramObject">
+                      <el-form-item
+                        v-for="(valueobj, keyobj, index2) in paramObject"
+                        :key="index2"
+                        :prop="keyobj"
+                      >
+                        <template slot="label">
+                          <span class="paramTitle" style="margin: auto">{{
+                            valueobj.meaning
+                          }}</span>
+                        </template>
+                        <el-input v-model.trim="valueobj.value"></el-input>
+                        <span class="valueRange">{{ valueobj.range }}</span>
+                      </el-form-item>
+                    </el-form> -->
+                    <el-form label-position="top" :model="paramObject">
+                      <el-row :gutter="20">
+                        <el-col :span="8" v-for="(valueobj, keyobj, index2) in paramObject" :key="index2">
+                          <el-form-item :prop="keyobj">
+                            <template slot="label">
+                              <span class="paramTitle" style="margin: auto">{{
+                                valueobj.meaning
+                                }}</span>
+                            </template>
+                            <el-input v-model.trim="valueobj.value"></el-input>
+                            <span class="valueRange">{{ valueobj.range }}</span>
+                          </el-form-item>
+                        </el-col>
+                      </el-row>
+                    </el-form>
+                  </div>
+                </div>
+                <!-- </div> -->
+              </el-tab-pane>
+            </el-tabs>
+          </div>
+        </el-col>
+      </el-container>
+      <div class="buttonGroup">
+        <el-col :span="10">
+          <el-button round @click="backStep()" style="margin-top: 20%">上一步</el-button>
+        </el-col>
+        <!-- <el-button round @click="printForm()">测试</el-button> -->
+        <!-- <el-row :gutter="20">                
+                    <el-button round @click="resetForm('DQN_ref')"  style="margin-top: 10%"
+                      >恢复默认</el-button>
+                  </el-row> -->
+        <el-col :span="10">
+          <el-button style="margin-top: 20%" type="primary" round>提交运算</el-button>
+        </el-col>
+      </div>
+    </div>
+  </template>
+
+
+
+  <style scoped>
+    #modelList {
+      height: 60vh;
+      width: 100%;
+      margin-bottom: 5vh;
+    }
+
+    .titleBox {
+      margin: 10px auto 10px auto;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .introBox {
+      background-color: #e8f3ff;
+      height: 10vh;
+      width: 100%;
+      overflow: auto;
+    }
+
+    .introBox p {
+      margin-left: 15px;
+    }
+
+    .introBox p:first-child {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .introBox p:nth-child(2) {
+      margin-left: 2em;
+    }
+
+    .paramBox .el-form {
+      margin-top: 3vh;
+      /* margin-left: 40vh; */
+    }
+
+    .paramBox .el-form .el-input {
+      width: 25vh;
+    }
+
+    .paramTitle {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .valueRange {
+      color: gray;
+      margin-left: 10px;
+    }
+
+    .el-icon-warning-outline {
+      margin-left: 10px;
+      font-size: 20px;
+    }
+
+    .el-icon-warning-outline:hover {
+      color: #368ce7;
+    }
+
+    .buttonGroup {
+      position: fixed;
+      bottom: 2%;
+      left: 55%;
+      transform: translateX(-50%);
+      /* 水平居中 */
+      width: 200px;
+      z-index: 9999;
+      /* 置于最顶层 */
+      margin-left: 6%;
+    }
+
+    .buttonBox {
+      width: 35vh;
+      margin-top: auto;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  </style>
+</body>
+
+</html>
