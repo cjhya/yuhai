@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: #1f2d2a;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(23, 107, 91, 0.1), transparent 28rem),
+    #f3f6f5;
+  font-family:
+    Inter, "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+}
+
+.app-shell {
+  width: min(1080px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 52px 0 64px;
+}
+
+.page-heading h2.ant-typography {
+  margin: 0;
+  color: #123d35;
+  letter-spacing: 0.02em;
+}
+
+.page-heading .ant-typography {
+  margin: 10px 0 0;
+  color: #63716e;
+}
+
+.source-alert {
+  margin: 24px 0 18px;
+}
+
+.data-card {
+  overflow: hidden;
+  border: 1px solid #dfe8e5;
+  box-shadow: 0 16px 45px rgba(27, 64, 56, 0.08);
+}
+
+.record-count,
+.match-count {
+  color: #71807c;
+  font-size: 13px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.toolbar .ant-input-search {
+  width: min(440px, 100%);
+}
+
+.field-name {
+  color: #284b44;
+  font-weight: 600;
+}
+
+.field-value {
+  color: #33423f;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    width: min(100% - 20px, 1080px);
+    padding-top: 28px;
+  }
+
+  .toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .toolbar .ant-input-search {
+    width: 100%;
+  }
+}
